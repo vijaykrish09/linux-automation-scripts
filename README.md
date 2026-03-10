@@ -32,3 +32,18 @@ A collection of professional Bash scripts designed to automate core System Admin
    ```bash
    git clone [https://github.com/your-username/linux-automation.git](https://github.com/your-username/linux-automation.git)
    cd linux-automation
+2. **Grant execution permissions:**
+
+
+chmod +x *.sh
+Run a script (requires root/sudo):
+
+
+sudo ./log_cleanup.sh
+
+**🧠 Admin Best Practices Applied**
+Process-Safe Log Clearing: Uses cat /dev/null instead of rm. This ensures that any process currently writing to the log file (like rsyslog) doesn't lose its file descriptor.
+
+Idempotency: Scripts check for existing users or services before attempting changes.
+
+Automation Ready: All scripts are designed to be easily scheduled via crontab for 24/7 monitoring.
