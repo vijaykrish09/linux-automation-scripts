@@ -4,7 +4,7 @@
 # Script Name: system_health_check.sh
 # Description: Scans all critical system services and restarts
 #              any that have failed.
-# Author:      [Your Name]
+# Author:      Vijay
 # =================================================================
 
 # Define the "Critical Services" to monitor
